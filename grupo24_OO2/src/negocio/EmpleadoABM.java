@@ -69,4 +69,9 @@ public class EmpleadoABM {
     public List<Empleado> traerHastaIngreso(LocalDate hasta){
     	return dao.traerhastaFechaDeIngreso(hasta);
     }
+    
+    public List<Ticket> traerTicketsPorEmpleado(long idEmpleado) {
+        return dao.traerTicketsPorEmpleado(idEmpleado);
+    }
+
 }
